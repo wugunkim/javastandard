@@ -8,7 +8,7 @@ public class ex6_7 {
 		
 		change(d);														//메인은 대기상태 ,체인지 메모리에 실행/ 호출  
 		System.out.println("After change(d)" );
-		System.out.println("Main() : x = " + d.x);
+		System.out.println("Main() : x = " + d.x);				
 	}
 	static void change(Data2 d) {
 		d.x = 1000;
