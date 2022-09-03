@@ -22,7 +22,7 @@ public class referenceDemo {
 	}
 
 }
-class A { ㅉ
+class A { 
 	public int id;
 	A(int id){
 		this.id =id;
