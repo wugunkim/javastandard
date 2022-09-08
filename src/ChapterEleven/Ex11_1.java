@@ -32,7 +32,7 @@ public class Ex11_1 {
 		list2.add(3,"A"); //3번째 인덱스에 A 추가 ~
 		print(list1, list2);
 		
-		list2.set(3,"AA");
+		list2.set(3,"AA");			//수
 		print(list1, list2);
 		
 		list1.add(0, "1");
