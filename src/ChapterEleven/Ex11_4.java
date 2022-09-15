@@ -25,13 +25,23 @@ public class Ex11_4 {
 				}else if (input.equalsIgnoreCase("history")) {
 					save(input);
 					LinkedList list =(LinkedList)q;
-					
-					for(int i=0; i<list.size(); i++)
+					final int size = list.size();
+					for(int i=0; i<size; i++)
 						System.out.println((i+1)+ "."+list.get(i));
+				}else {
+					save(input);
+					System.out.println(input);
 				}
-					
+				}catch (Exception e){
+					System.out.println("입력 오류입니다.");
 			}
 		}
 	}
-
+		public static void save(String input) {
+			if(!"".equals(input))
+				q.offer(input);
+			
+			if(q.size() > MAX_SIZE)
+				q.remove();
+		}
 }
